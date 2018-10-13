@@ -17,4 +17,4 @@ const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI);
 
 // Require our main app file and start the web server up
-require('./src/app.js').start(process.env.PORT);
+require('./api-server/src/app/app.js').start(process.env.PORT);

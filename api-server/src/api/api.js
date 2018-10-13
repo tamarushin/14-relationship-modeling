@@ -3,7 +3,7 @@
 import express from 'express';
 const router = express.Router();
 
-import notFound from './../middleware/404.js';
+import notFound from '../middleware/404.js';
 
 import modelFinder from '../middleware/models.js';
 router.param('model', modelFinder);
