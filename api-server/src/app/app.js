@@ -3,16 +3,14 @@
 // 3rd Party Libraries
 import express from 'express';
 import morgan from 'morgan';
-import cors from 'cors';
 
-import router from '../api/api.js';
+import router from '../api/api';
 
 import errorHandler from '../middleware/error.js';
 import notFound from '../middleware/404.js';
 
 let app = express();
 
-app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 

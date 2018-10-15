@@ -24,8 +24,8 @@ describe('api', () => {
     return mockRequest
       .get(API_URL)
       .then(results => {
-        let coffees = JSON.parse(results.text);
-        expect(coffees).toEqual([]);
+        let gummyBears = JSON.parse(results.text);
+        expect(gummyBears).toEqual([]);
       });
   });
 
